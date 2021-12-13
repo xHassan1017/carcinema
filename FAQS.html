@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\Root\CSS\style.css">
+    <title>In The Car Cinema</title>
+</head>
+<body>
+    <img src="images/alternative logo.jpg"class="logo">
+    <ul>
+        
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Venues.html">Venues</a></li>
+        <li><a href="Movies & trailers.html">Movies & trailers</a></li>
+        <li><a href="Food & drinks.html">Food & drinks</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="Gift vouchers.html">Gift vouchers</a></li>
+        <li><a href="FAQS.html">FAQS</a></li>
+      </ul>
+      
+<h1>FAQS (frequently asked questions):</h1>
+<button class="collapsible">Do I have to bring my mask?</button>
+<div class="content3">
+  <p>YES you do have to bring your mask. However if you do not have a mask and you arrive at the event without it, we will gladly provide you with one.</p>
+</div>
+<button class="collapsible">Is the content kid friendly?</button>
+<div class="content3">
+  <p>Most of the films are kid friendly however some films may contain some content innapropriate for children so we advice you to look up the films PEGI ratings.</p>
+</div>
+<button class="collapsible">Am I allowed to bring my own food?</button>
+<div class="content3">
+  <p>NO you are not allowed to bring your own HOT FOOD however you are allowed to bring SNACKS to the event such as chocolates/crisps</p>
+</div><button class="collapsible">Will there be toilets available?</button>
+<div class="content3">
+  <p>YES there will be multiple toilets accessible at the event.</p>
+</div><button class="collapsible">Do I have to bring a car?</button>
+<div class="content3">
+  <p>YES you do have to bring a car however if you have booked your tickets and arrive at the event without a car we Will provide you with one however you are going to have to pay for it.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+    </body>
+    </html>

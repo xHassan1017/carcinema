@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\Root\CSS\style.css">
+    <title>In The Car Cinema</title>
+</head>
+<body>
+    <img src="images/alternative logo.jpg"class="logo">
+    <ul>
+        
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Venues.html">Venues</a></li>
+        <li><a href="Movies & trailers.html">Movies & trailers</a></li>
+        <li><a href="Food & drinks.html">Food & drinks</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="Gift vouchers.html">Gift vouchers</a></li>
+        <li><a href="FAQS.html">FAQS</a></li>
+      </ul>
+      <img src="images/gift voucher.jpg">
+      <p>
+        Here at in the Car Cinema we have the perfect christmas present for you! <br>
+        Why don't you buy your family and friends gift vouchers to our in the car cinema!<br>
+        If that's not enough you can reserve a seat and  even tickets and food for them.
+      </p>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button>
+
+    <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Images/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container7">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container7" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class=".psw"> <a href="#">Already have an account?</a></span>
+    </div>
+  </form>
+    </body>
+    </html
